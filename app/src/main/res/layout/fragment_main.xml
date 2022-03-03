@@ -5,11 +5,33 @@
 
 
     <ImageView
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        android:id="@+id/iv_logo_academia"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/logo_academia" />
+        android:background="@drawable/logo_academia"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
 
+    <TextView
+        android:id="@+id/tv_funcionamento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Funcionamento:"
+        android:textSize="16dp"
+        android:textColor="@color/black"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_logo_academia"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Seg á Dom - 09h00 ás 23h00"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_funcionamento"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

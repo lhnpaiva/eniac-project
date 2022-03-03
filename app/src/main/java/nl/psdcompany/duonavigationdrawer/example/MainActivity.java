@@ -26,19 +26,19 @@ public class MainActivity extends AppCompatActivity implements DuoMenuView.OnMen
         setContentView(R.layout.activity_main);
         mTitles = new ArrayList<>(Arrays.asList(getResources().getStringArray(R.array.menuOptions)));
 
-        // Initialize the views
+        // Inicializa as Views
         mViewHolder = new ViewHolder();
 
-        // Handle toolbar actions
+        // Trata ações da toolbar
         handleToolbar();
 
-        // Handle menu actions
+        // Trata menu de opções
         handleMenu();
 
-        // Handle drawer actions
+        // Trata ações
         handleDrawer();
 
-        // Show main fragment in container
+        // Mostra o main fragment como container
         goToFragment(new MainFragment(), false);
         mMenuAdapter.setViewSelected(0, true);
         setTitle(mTitles.get(0));
